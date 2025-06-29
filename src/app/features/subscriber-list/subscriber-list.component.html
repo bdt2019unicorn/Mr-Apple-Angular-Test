@@ -1,0 +1,19 @@
+<h2>My Subscribers</h2>
+
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="error">{{ error }}</div>
+
+<table *ngIf="!loading && !error">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Subscribed At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let subscriber of subscribers">
+      <td>{{ subscriber.email }}</td>
+      <td>{{ subscriber.subscribedAt | date: "medium" }}</td>
+    </tr>
+  </tbody>
+</table>

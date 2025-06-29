@@ -9,12 +9,21 @@ import { UserService } from "../../../../core/auth/services/user.service";
 import { RxLet } from "@rx-angular/template/let";
 import { IfAuthenticatedDirective } from "../../../../core/auth/if-authenticated.directive";
 import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
+import SubscriberListComponent from "src/app/features/subscriber-list/subscriber-list.component";
+import { NewsletterSubscriptionComponent } from "src/app/shared/components/newsletter-subscription/newsletter-subscription.component";
 
 @Component({
   selector: "app-home-page",
   templateUrl: "./home.component.html",
   styleUrls: ["./home.component.css"],
-  imports: [NgClass, ArticleListComponent, RxLet, IfAuthenticatedDirective],
+  imports: [
+    NgClass,
+    ArticleListComponent,
+    RxLet,
+    IfAuthenticatedDirective,
+    SubscriberListComponent,
+    NewsletterSubscriptionComponent,
+  ],
 })
 export default class HomeComponent implements OnInit {
   isAuthenticated = false;

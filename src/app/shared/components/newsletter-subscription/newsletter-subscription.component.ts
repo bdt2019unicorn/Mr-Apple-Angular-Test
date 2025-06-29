@@ -1,10 +1,11 @@
 import { Component } from "@angular/core";
-import { FormBuilder, Validators } from "@angular/forms";
+import { FormBuilder, ReactiveFormsModule, Validators } from "@angular/forms";
 import { SubscriptionService } from "src/app/core/service/subscription.service";
 
 @Component({
   selector: "app-newsletter-subscription",
   templateUrl: "./newsletter-subscription.component.html",
+  imports: [ReactiveFormsModule],
 })
 export class NewsletterSubscriptionComponent {
   isSubmitting = false;

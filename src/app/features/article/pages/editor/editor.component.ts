@@ -10,8 +10,8 @@ import { combineLatest } from "rxjs";
 import { Errors } from "../../../../core/models/errors.model";
 import { ArticlesService } from "../../services/articles.service";
 import { UserService } from "../../../../core/auth/services/user.service";
-import { ListErrorsComponent } from "../../../../shared/components/list-errors.component";
 import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
+import { ListErrorsComponent } from "src/app/shared/components/list-errors/list-errors.component";
 
 interface ArticleForm {
   title: FormControl<string>;

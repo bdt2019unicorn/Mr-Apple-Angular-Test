@@ -9,7 +9,7 @@ import { UserService } from "../../../../core/auth/services/user.service";
 import { ArticleMetaComponent } from "../../components/article-meta.component";
 import { AsyncPipe, NgClass } from "@angular/common";
 import { MarkdownPipe } from "../../../../shared/pipes/markdown.pipe";
-import { ListErrorsComponent } from "../../../../shared/components/list-errors.component";
+import { ListErrorsComponent } from "src/app/shared/components/list-errors/list-errors.component";
 import { ArticleCommentComponent } from "../../components/article-comment.component";
 import { catchError } from "rxjs/operators";
 import { combineLatest, throwError } from "rxjs";

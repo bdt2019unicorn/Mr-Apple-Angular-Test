@@ -6,7 +6,7 @@ import {
   ReactiveFormsModule,
 } from "@angular/forms";
 import { ActivatedRoute, Router, RouterLink } from "@angular/router";
-import { ListErrorsComponent } from "../../shared/components/list-errors.component";
+import { ListErrorsComponent } from "src/app/shared/components/list-errors/list-errors.component";
 import { Errors } from "../models/errors.model";
 import { UserService } from "./services/user.service";
 import { takeUntilDestroyed } from "@angular/core/rxjs-interop";

@@ -8,7 +8,7 @@ import {
 import { Router } from "@angular/router";
 import { User } from "../../core/auth/user.model";
 import { UserService } from "../../core/auth/services/user.service";
-import { ListErrorsComponent } from "../../shared/components/list-errors.component";
+import { ListErrorsComponent } from "../../shared/components/list-errors/list-errors.component";
 import { Errors } from "../../core/models/errors.model";
 import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
 
